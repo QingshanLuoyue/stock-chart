@@ -5,10 +5,16 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lint:fix": "eslint --ext .js,.vue -f ./node_modules/eslint-friendly-formatter --fix src"
   },
   "dependencies": {
+    "axios": "0.18.0",
     "core-js": "^3.6.5",
+    "d3": "6.2.0",
+    "dayjs": "1.9.3",
+    "number-precision": "1.5.0",
+    "yl-indicator": "git+ssh://git@szgitlab.youxin.com:222/plugin-fork/yl-indicator.git#v0.0.2",
     "vue": "^2.6.11"
   },
   "devDependencies": {
@@ -17,22 +23,17 @@
     "@vue/cli-service": "~4.5.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
+    "eslint-config-standard": "11.0.0",
+    "eslint-plugin-import": "2.12.0",
+    "eslint-plugin-node": "6.0.1",
+    "eslint-plugin-promise": "3.8.0",
+    "eslint-plugin-standard": "3.1.0",
     "eslint-plugin-vue": "^6.2.2",
+    "node-sass": "4.14.1",
+    "pug": "3.0.0",
+    "pug-plain-loader": "1.0.0",
+    "sass-loader": "7.0.3",
     "vue-template-compiler": "^2.6.11"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "parser": "babel-eslint"
-    },
-    "rules": {}
   },
   "browserslist": [
     "> 1%",

@@ -1,0 +1,162 @@
+//内地
+$primary-color: #0BC0F1; // 主品牌色
+$foreground: #1A1A1A; //前景色
+$background-color: #121212; //根元素背景色
+$line-color: rgba(256, 256, 256, 0.05); // 分割线颜色
+$table-line: #242424; // 表格线
+$btn-color-buy: #0BC0F1; // 买入/确定
+$btn-color-sell: #FF9E0E; // 卖出
+$bth-color-gray: #979797; //按钮置灰
+$rose-color:#EA3D3D; // 涨色
+$fall-color:#00BA60;  // 跌色
+$flat-color:#6D6D6D; // 平色
+$rise-bg: rgba($rose-color, 0.2);
+$fall-bg: rgba($fall-color, 0.2);
+$foreground-light: #2A2A2A; //菜单颜色
+
+$label-color-initial: #A069FF; // 标签初始态    待定
+$label-color-middle: #BB955B; // 标签中间态
+$label-color-option: #BB955B; // 标签操作态
+$label-color-finished: #BB955B; // 标签完成态
+$label-color-gray: #BB955B; // 标签置灰态
+$label-color-financial: #BB955B; // 标签金融
+
+$stock-color: #A069FF; // 股票置灰态
+$US-stock-color: #BB955B;  // 美股颜色
+$sh-or-sz-stock-color: #D04463;  // 上证/沪深颜色
+
+@mixin set-text-font-size($fontSize) {
+  font-size: 12px;
+  transform: scale($fontSize / 12px);
+  transform-origin: left;
+}
+
+@mixin set-text-font-small-size() {
+  @include set-text-font-size(10px)
+};  //文字字体大小(小号)
+$text-font-smallest-size: 10px; //文字字体大小(最小👌 10px)
+$text-font-small-size: 12px;  //文字字体大小(小号)
+$text-font-mini-size: 12px; //文字字体大小(迷你)
+$text-font-middle-size: 14px; //文字字体大小(中号)
+$text-font-large-size: 16px; //文字字体大小(大号)
+$text-font-largger-size: 18px; //文字字体大小(超大号)
+$num-font-mini-size: 12px; //数字字体大小(迷你)
+$num-font-middle-size: 14px; //数字字体大小(中号)
+$num-font-large-size: 16px; //数字字体大小(大号)
+$num-font-largger-size: 18px; //数字字体大小(超大号)
+$font-color: #979797; // 字体颜色
+$light-color: rgba(235, 235, 235, 1); // 字体颜色 透明度20%
+$font-color-lighter: rgba(235, 235, 235, 0.05); // 字体颜色 透明度5%
+$font-color-light: rgba(235, 235, 235, 0.2); // 字体颜色 透明度20%
+$font-color-height: rgba(235, 235, 235, 0.4); // 字体颜色 透明度40%
+$font-color-heighter: rgba(235, 235, 235, 0.6); // 字体颜色 透明度60%
+$font-height-small:14px;
+$font-height-mini:16px;
+$font-height-middle:18px;
+$font-height-large:20px;
+$font-height-largger:22px;
+$padding-levelone-top-bottom: 12px;
+$padding-leveltwo-top-bottom: 16px ;
+$padding-levelthree-top-bottom: 22px ;
+$padding-levelfour-top-bottom: 28px ;
+$padding-levelone-left-right: 6px;
+$padding-leveltwo-left-right: 8px;
+$padding-levelthree-left-right: 10px;
+$padding-levelfour-left-right: 12px;
+
+
+$checked-color:#0BC0F1; //选中颜色
+$disable-gray: rgba(235, 235, 235, 0.5); // 未选中/二级icon颜色
+$selected-color: rgba(11, 192, 241, 0.1);
+
+
+//香港
+$hk-primary-color: #000;
+
+//文字字体 Microsoft YaHei
+$MicrosoftYaHei: Microsoft YaHei;
+$PingFangSCMedium: 'PingFangSC-Medium, PingFang SC', 'DINPro-Medium', 'SF UI Display Medium', 'Microsoft Yahei';
+$PingFangSCRegular: 'PingFangSC-Regular, PingFang SC,PingFangSC-Medium', 'DINPro-Medium', 'SF UI Display Medium', 'Microsoft Yahei';
+//数字字体
+$DINPro-Medium: 'PingFangSC-Regular, PingFang SC,PingFangSC-Medium', 'DINPro-Medium', 'SF UI Display Medium', 'Microsoft Yahei';
+//字母字体
+$SFUIDisplaMedium: SFUIDisplay Medium;
+$SFUIDisplaRegular: SFUIDisplay-Regular, SFUIDisplay;
+
+$form-width: 192px;
+$form-height: 24px;
+$form-radius: 2px;
+$form-color: #EBEBEB;
+$form-placeholder-color: #6D6D6D;
+$form-border-color: #434343;
+$hover-color: rgba($primary-color, 0.1);
+$hover-color2: rgba($primary-color, 0.1);
+$remind-color: #FF7127;
+
+// 图标大小
+@mixin icon($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+// 字体设置
+@mixin font($family, $size, $color, $weight) {
+   font-family: $family;
+   font-size: $size;
+   color: $color;
+   font-weight:  $weight;
+}
+
+@mixin scroll() {
+  ::-webkit-scrollbar {/*滚动条整体样式*/
+      width: 7px;     /*高宽分别对应横竖滚动条的尺寸*/
+      height: 5px;
+      position: absolute;
+  }
+
+  ::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 7px#7b7b7b;
+        background: #7b7b7b;
+    }
+
+  ::-webkit-scrollbar-track {/*滚动条里面轨道*/
+        -webkit-box-shadow: inset 0 0 0px #434343;
+        border-radius: 10px;
+        background: #1A1A1A;
+  }
+  ::-webkit-scrollbar-corner {
+      background-color: #1A1A1A;
+  }
+}
+
+@mixin form-input {
+  height: $form-height;
+  line-height: $form-height;
+  border-radius: $form-radius;
+  background: $foreground-light;
+  border: none;
+  font-size: $text-font-mini-size;
+  color: $form-color;
+  font-family: $PingFangSCMedium;
+  padding: 0 8px;
+  &::-webkit-input-placeholder { /* WebKit browsers */
+    color: $form-placeholder-color;
+  }
+  &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: $form-placeholder-color;
+  }
+  &::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: $form-placeholder-color;
+  }
+  &:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: $form-placeholder-color;
+  }
+}
+
+@mixin bg($bg, $position: center center, $size: contain) {
+  background-image: url("~@/renderer/assets/images/" + $bg);
+  background-repeat: no-repeat;
+  background-position: $position;
+  background-size: $size;
+}
