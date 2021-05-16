@@ -297,7 +297,6 @@ export default {
         this.drawLinesMapper = {}
     },
     destroyed() {
-        this.$bus.$off(['CHART_TYPE', 'KLINE_CYCLE', 'CHART_REHABILITATION'])
         document.body.removeEventListener('click', this.hideMore)
     },
     filters: {

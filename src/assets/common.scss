@@ -1,0 +1,128 @@
+@import './theme.scss';
+@import './variable.scss';
+// @import '~@/renderer/assets/style/element-reset.scss';
+
+/*** reset ***/
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: $PingFangSCRegular;
+    color: $font-color;
+}
+body, div, h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 12px;
+    line-height: 1.5;
+    background-color: #121212;
+
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight: normal;
+}
+i{
+    font-style: normal;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a, a:hover, a:active, a:visited, a:link, a:focus{
+    color: $yx-blue-link;
+    text-decoration: none;
+    outline: none;
+}
+img{
+    border: none;
+    vertical-align: top;
+    -webkit-user-drag: none;
+}
+button{
+    cursor: pointer;
+}
+svg {
+    shape-rendering: crispEdges;
+}
+
+.color-flat {
+    color: $flat-color !important;
+}
+
+
+body[stock-color="redUp-greenDown"]{
+    .rose {
+        color: $rose-color !important;
+    }
+    .rose-color{
+        color: $rose-color !important;
+    }
+    .fall {
+        color: $fall-color !important;
+    }
+    .rise-color {
+        color: $yx-red !important;
+    }
+    .fall-color {
+        color: $yx-green !important;
+    }
+    .color-rise{
+        color: $rose-color !important;
+    }
+    .color-fall {
+        color: $fall-color !important;
+    }
+    .rise-bg-1{
+        background-color: $rose-color !important;;
+    }
+    .fall-bg-1{
+        background-color: $fall-color !important;;
+    }
+    .rise-bg-2{
+        background-color: $rise-bg !important;;
+    }
+    .fall-bg-2{
+        background-color: $fall-bg !important;;
+    }
+}
+
+body[stock-color="greenUp-redDown"]{
+    .rose {
+        color: $fall-color !important;
+    }
+    .rose-color{
+        color: $fall-color !important;
+    }
+    .rise-color {
+        color: $yx-green !important;
+    }
+    .fall-color {
+        color: $yx-red !important;
+    }
+
+    .fall {
+        color: $rose-color !important;
+    }
+    .color-rise{
+        color: $fall-color !important;
+    }
+    .color-fall {
+        color: $rose-color !important;
+    }
+    .rise-bg-1{
+        background-color: $fall-color !important;;
+    }
+    .fall-bg-1{
+        background-color: $rose-color !important;;
+    }
+    .rise-bg-2{
+        background-color: $fall-bg !important;;
+    }
+    .fall-bg-2{
+        background-color: $rise-bg !important;;
+    }
+}
